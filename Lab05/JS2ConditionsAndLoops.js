@@ -45,6 +45,19 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+var speedLimit = 65
+var mySpeed = 50
+if (mySpeed > speedLimit) {
+   console.log ("Slow Down! Mom is mad!");
+
+} else if (speedLimit === mySpeed) {
+   console.log ("Everyone is happy!");
+} else {
+   console.log ("Speed up! Dad is mad!");
+}
+
+
+
 
 
 /*-------------------------------------------------------*/
@@ -64,6 +77,16 @@ Question 2: Is it time to wake up for work? \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let alarmSet = true;
+let weekDay = false;
+
+
+if (alarmSet && weekDay) {
+    console.log("Sound Alarm! Time for work!");
+} else {
+    console.log("I can sleep in!");
+}
+
 
 
 /*-------------------------------------------------------*/
@@ -82,7 +105,15 @@ Question 3: Username & Password \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let username = "Tommy123";
+let password = "12345";
 
+
+if ((username === "Tommy123" && password === "12345") || (username === "Timmy456" && password === "6789")) {
+    console.log("Admin Login Successful");
+} else {
+    console.log("Admin Access Denied");
+}
 
 /*-------------------------------------------------------*/
 
@@ -102,8 +133,28 @@ Question 4: Student Class \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let studentClass;
+let studentGrade = 8;
 
-
+if (studentGrade >= 0 && studentGrade <= 6){
+   studentClass= "Elementary";
+} else if (studentGrade === 7 || studentGrade === 8) {
+   studentClass= "Middle";
+   
+} else if (studentGrade === 9) {
+   studentClass= "Freshman";
+} else if (studentGrade === 10) {
+   studentClass= "Sophomore";
+} else if (studentGrade === 11) {
+   studentClass = "Junior";
+} else if (studentGrade === 12) {
+   studentClass = "Senior";
+} else {
+   console.log ("Error");
+} 
+if (studentClass){
+   console.log (studentClass);
+}
 /*-------------------------------------------------------*/
 
 console.log(`--------------------------
@@ -116,6 +167,27 @@ Question 5: Loops! \n`);
  *         Print the iterator if the remainder (% // modulus) is 0 when divisible by 4.
  * 
  * ↓ YOUR CODE HERE ↓ */
+for (let i = 10; i >= -10; i--) {
+   console.log(i);
+}
+
+let j = 1;
+
+do {
+    console.log(j);
+    j++;
+} while (j <= 50);
+
+let k = 1;
+
+do {
+    if (k % 4 === 0) {
+        console.log(k);
+    }
+    k++;
+} while (k <= 50);
+
+
 
 
 
@@ -131,11 +203,12 @@ Question 6: Debugging an infinite loop! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-   /*    
-   for (let i = 11; i > 10; i++) { 
-      console.log(i);   
-   } 
-  */
+       
+for (let i = 11; i > 10; i--) { 
+   console.log(i);   
+}
+
+  
 
 
 
